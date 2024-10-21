@@ -1,5 +1,7 @@
 #include "manyfunctions.h"
 
+
+
 int main (int argc, char *argv[]) {
     int x = 15;
     int y = 35;
@@ -33,7 +35,12 @@ int main (int argc, char *argv[]) {
     for (i=0; i<argc ; i++){  
         printf("%s\n", argv[i]);
     }
-    printf("The value of i is %d\n", i);
+    printf("The value of abc in main  is %d\n", abc);
+
+    for (i=0; i<3 ; i++){  
+        extendLifetime();
+    }
+   
     return 0;
 }
 

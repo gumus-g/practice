@@ -1,10 +1,14 @@
 #include <stdio.h>
+
+int abc;
+
 float average (int a, int b, int c){
     float avg;
     avg = (a+b+c)/3.0;
     a = 200;
     b = 3000;
     c = 1000;
+    printf("The value of abc in average is %d\n", abc);
     return avg;
 }
 
@@ -26,4 +30,12 @@ float averageArray (int a[], int size){
         a[i] *= 2;
     }    
     return avg;
+}
+void extendLifetime() {
+    int lvar = 0;
+    static int svar = 0;
+    lvar++;
+    svar++;
+    printf("The value of lvar is %d\n", lvar);
+    printf("The value of svar is %d\n", svar);
 }
