@@ -49,6 +49,12 @@ int main (int argc, char *argv[]){
     for (int i=0; i<3; i++) {
         printf("Name:%s age:%d weight:%.2f\n", (pa+i)->name, (pa+i)->age, (pa+i)->weight);
     }
+
+    //pa = p
+    //for (int i=0; i<3; i++) {
+    //    printf("Name:%s age:%d weight:%.2f\n", pa->name, pa->age, pa->weight);
+    //    pa++
+    //}
     free(p);
     return 0;
 }
